@@ -1,8 +1,4 @@
 # 🔧 Automotive Engine Fault Pattern Mining
-
-> **Interpretable fault detection using Apriori association rule mining on real engine sensor data.**  
-> Built as a portfolio project targeting automotive OEM and Tier-1 supplier environments (BMW, Fraunhofer, Bosch).
-
 ---
 
 ## 📌 Project Overview
