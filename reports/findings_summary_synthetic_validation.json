@@ -1,0 +1,117 @@
+{
+  "n_rows": 10000,
+  "class_balance": {
+    "Normal": 0.8225,
+    "Warning": 0.1099,
+    "Critical": 0.0676
+  },
+  "condition_label_mapping_assumption": {
+    "0": "Normal",
+    "1": "Warning",
+    "2": "Critical"
+  },
+  "top_rules_by_class": {
+    "Critical": [
+      {
+        "antecedents_str": "acoustic_db_High, rms_vib_High",
+        "consequents_str": "Critical",
+        "support": 0.061,
+        "confidence": 0.5322862129144852,
+        "lift": 7.874056404060433
+      }
+    ],
+    "Warning": [
+      {
+        "antecedents_str": "surf_temp_High, vib_amp_High",
+        "consequents_str": "Warning",
+        "support": 0.0866,
+        "confidence": 0.7780772686433064,
+        "lift": 7.079865956717984
+      },
+      {
+        "antecedents_str": "acoustic_db_Low, surf_temp_High",
+        "consequents_str": "Warning",
+        "support": 0.0352,
+        "confidence": 0.31711711711711715,
+        "lift": 2.8855060702194466
+      },
+      {
+        "antecedents_str": "acoustic_db_Low, vib_amp_High",
+        "consequents_str": "Warning",
+        "support": 0.0345,
+        "confidence": 0.30396475770925113,
+        "lift": 2.7658303704208476
+      },
+      {
+        "antecedents_str": "rms_vib_Low, vib_amp_High",
+        "consequents_str": "Warning",
+        "support": 0.0339,
+        "confidence": 0.30376344086021506,
+        "lift": 2.763998551958281
+      },
+      {
+        "antecedents_str": "rms_vib_Low, surf_temp_High",
+        "consequents_str": "Warning",
+        "support": 0.0346,
+        "confidence": 0.3016564952048823,
+        "lift": 2.7448270719279555
+      }
+    ],
+    "Normal": [
+      {
+        "antecedents_str": "rms_vib_Low, surf_temp_Mid",
+        "consequents_str": "Normal",
+        "support": 0.1073,
+        "confidence": 0.972801450589302,
+        "lift": 1.18273732594444
+      },
+      {
+        "antecedents_str": "rms_vib_Low, vib_amp_Low",
+        "consequents_str": "Normal",
+        "support": 0.1064,
+        "confidence": 0.9708029197080291,
+        "lift": 1.180307501164777
+      },
+      {
+        "antecedents_str": "rms_vib_Low, surf_temp_Low",
+        "consequents_str": "Normal",
+        "support": 0.1052,
+        "confidence": 0.970479704797048,
+        "lift": 1.1799145347076572
+      },
+      {
+        "antecedents_str": "acoustic_db_Mid, vib_amp_Low",
+        "consequents_str": "Normal",
+        "support": 0.1056,
+        "confidence": 0.9696969696969697,
+        "lift": 1.1789628810905406
+      },
+      {
+        "antecedents_str": "acoustic_db_Low, vib_amp_Low",
+        "consequents_str": "Normal",
+        "support": 0.105,
+        "confidence": 0.9686346863468634,
+        "lift": 1.1776713511815968
+      }
+    ]
+  },
+  "random_forest_metrics": {
+    "accuracy": 0.9588,
+    "f1_macro": 0.9111712286377115,
+    "f1_weighted": 0.9575177027257918,
+    "roc_auc_ovr_macro": 0.9086976202796846
+  },
+  "mean_abs_shap_critical_by_sensor": {
+    "RMS_Vibration": 0.19268354381935462,
+    "Acoustic_dB": 0.18536935701114865,
+    "Vibration_Amplitude": 0.026027036238507967,
+    "Surface_Temperature": 0.019407047571075687,
+    "Exhaust_Temperature": 0.004900466905076828,
+    "Exhaust_Pressure": 0.004550426939384931,
+    "Amplitude_Mean": 0.004538738021568689,
+    "Acoustic_Frequency": 0.004237936204347569,
+    "Intake_Pressure": 0.003927263381881868,
+    "Vibration_Frequency": 0.003864855738698125,
+    "Frequency_Band_Energy": 0.003605463033201161
+  }
+}
